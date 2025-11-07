@@ -24,11 +24,18 @@ xui2remnawave-migrate/
 
 ---
 
-## ⚙️ Установка
+## ⚙️ Установка автоматическая
+
+1. Запустите команду в консоли:
+```
+bash -c "$(curl -s https://raw.githubusercontent.com/evoll/xui2remnawave-migrate/main/install.sh)"
+```
+   
+## ⚙️ Установка вручную
 
 1. Клонируйте или скачайте репозиторий / архив:
    ```bash
-   git clone https://github.com/yourname/xui2remnawave-migrate.git
+   git clone https://github.com/evoll/xui2remnawave-migrate.git
    cd xui2remnawave-migrate
    ```
 
@@ -115,7 +122,7 @@ logs/migration_2025-11-07_18-00.log
 
 ## ⚠️ Предупреждения
 
-- Перед миграцией **сделайте резервную копию** базы Remnawave.  
+- Перед миграцией **сделайте [резервную копию](https://github.com/distillium/remnawave-backup-restore)** базы Remnawave (Отдельное спасибо **[Distillium](https://github.com/distillium)**).  
 - Проверьте права API-токена Remnawave (он должен иметь доступ к `/users`).  
 - Используйте HTTPS для безопасного соединения.  
 - Панель 3x-UI должна быть запущена и доступна по указанному URL.
